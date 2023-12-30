@@ -1,0 +1,641 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Apr 30 17:21:25 2022
+# Process ID: 11444
+# Current directory: D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1
+# Command line: vivado.exe -log accelerator_bd_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source accelerator_bd_wrapper.tcl -notrace
+# Log file: D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper.vdi
+# Journal file: D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source accelerator_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+Command: link_design -top accelerator_bd_wrapper -part xc7z010clg400-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.dcp' for cell 'accelerator_bd_i/processing_system7_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 575.262 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'DRIVE' constraint because net 'accelerator_bd_i/processing_system7_0/PJTAG_TDO' is not directly connected to top level port. Synthesis is ignored for DRIVE but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'SLEW' constraint because net 'accelerator_bd_i/processing_system7_0/PJTAG_TDO' is not directly connected to top level port. Synthesis is ignored for SLEW but preserved for implementation.
+Parsing XDC File [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc] for cell 'accelerator_bd_i/processing_system7_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:20]
+WARNING: [Vivado 12-627] No clocks matched 'PJTAG_TCK'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:20]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:20]
+get_clocks: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1148.082 ; gain = 461.996
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks PJTAG_TCK]'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:20]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'PJTAG_TCK'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:21]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:21]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks PJTAG_TCK]'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:21]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'PJTAG_TCK'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:22]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:22]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks PJTAG_TCK]'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:22]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-627] No clocks matched 'PJTAG_TCK'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:23]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:23]
+CRITICAL WARNING: [Vivado 12-4739] set_output_delay:No valid object(s) found for '-clock [get_clocks PJTAG_TCK]'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:23]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:37]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:38]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:39]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:40]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:41]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:42]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:44]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:45]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:46]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:47]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:48]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:49]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:51]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:52]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:53]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:54]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:55]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:56]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:58]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:59]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:60]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:61]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:62]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:63]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:65]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:66]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:67]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:68]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:69]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:70]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:72]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:73]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:74]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:75]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:76]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:77]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:79]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:80]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:81]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:82]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:83]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:84]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:86]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:87]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:88]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:89]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:90]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:91]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:93]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:94]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:95]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:96]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:97]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:98]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:100]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:101]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:102]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:103]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:104]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:105]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:107]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:108]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:109]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:110]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:111]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:112]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:114]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:115]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:116]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:117]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:118]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:119]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:121]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:122]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:123]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:124]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:125]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:126]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:128]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:129]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:130]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:131]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:132]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:133]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:135]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:136]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:137]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:138]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:139]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:140]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:142]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:143]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:144]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:145]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'pullup', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:146]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PIO_DIRECTION', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:147]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'iostandard', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:149]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:150]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'slew', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:151]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'drive', because the property does not exist for objects of type 'pin'. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:152]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+INFO: [Common 17-14] Message 'Netlist 29-160' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc:152]
+Finished Parsing XDC File [d:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.srcs/sources_1/bd/accelerator_bd/ip/accelerator_bd_processing_system7_0_0/accelerator_bd_processing_system7_0_0.xdc] for cell 'accelerator_bd_i/processing_system7_0/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1163.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+15 Infos, 6 Warnings, 104 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1163.602 ; gain = 736.930
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1165.301 ; gain = 1.699
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 99d9112a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 1174.461 ; gain = 9.160
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 99d9112a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 1366.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: e24cdd28
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.475 . Memory (MB): peak = 1366.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 63 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 10e410899
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1366.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 89 cells
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common MMCM/DPLL/XPLL driver.
+INFO: [Opt 31-1112] Starts optimizing BUFG(s) with a common driver.
+INFO: [Opt 31-1092] Phase BUFG optimization transformed 0 BUFG(s) to MBUFG(s).
+Phase 4 BUFG optimization | Checksum: 10e410899
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1366.883 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 10e410899
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1366.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 10e410899
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1366.883 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |              63  |                                              0  |
+|  Sweep                        |               0  |              89  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1366.883 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 187c0b7da
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1366.883 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 187c0b7da
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 1372.578 ; gain = 5.695
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 187c0b7da
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.578 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.578 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 187c0b7da
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1372.578 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 6 Warnings, 104 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1372.578 ; gain = 208.977
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1372.578 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint 'D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file accelerator_bd_wrapper_drc_opted.rpt -pb accelerator_bd_wrapper_drc_opted.pb -rpx accelerator_bd_wrapper_drc_opted.rpx
+Command: report_drc -file accelerator_bd_wrapper_drc_opted.rpt -pb accelerator_bd_wrapper_drc_opted.pb -rpx accelerator_bd_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1393.547 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 9f2679a9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.235 . Memory (MB): peak = 1393.547 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.547 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1310ba410
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1393.547 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 21a1a5b8f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.547 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 21a1a5b8f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.547 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 21a1a5b8f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1393.547 ; gain = 0.000
+
+Phase 2 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.547 ; gain = 0.000
+Phase 2 Final Placement Cleanup | Checksum: 21a1a5b8f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1393.547 ; gain = 0.000
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: 1310ba410
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1393.547 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 6 Warnings, 104 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1393.547 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1393.547 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.199 . Memory (MB): peak = 1393.547 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file accelerator_bd_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1393.547 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file accelerator_bd_wrapper_utilization_placed.rpt -pb accelerator_bd_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file accelerator_bd_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.547 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 98.6% nets are fully routed)
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+63 Infos, 6 Warnings, 104 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1393.828 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1393.832 ; gain = 0.004
+INFO: [Common 17-1381] The checkpoint 'D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 91e52a67 ConstDB: 0 ShapeSum: 9f2679a9 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 18454b8c8
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1417.410 ; gain = 14.539
+Post Restoration Checksum: NetGraph: f5da8ee4 NumContArr: 8e7a29e4 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 18454b8c8
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1417.410 ; gain = 14.539
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 18454b8c8
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1423.398 ; gain = 20.527
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 18454b8c8
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1423.398 ; gain = 20.527
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: aa7a4405
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1426.773 ; gain = 23.902
+Phase 2 Router Initialization | Checksum: aa7a4405
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1426.773 ; gain = 23.902
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 130
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 130
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+ Number of Nodes with overlaps = 0
+Phase 3 Initial Routing | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+Phase 4.1 Global Iteration 0 | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+Phase 4 Rip-up And Reroute | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+Phase 5 Delay and Skew Optimization | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+Phase 6.1 Hold Fix Iter | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+Phase 6 Post Hold Fix | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1431.594 ; gain = 28.723
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1433.598 ; gain = 30.727
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1433.598 ; gain = 30.727
+
+Phase 10 Post Router Timing
+Phase 10 Post Router Timing | Checksum: 12348e1a4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1433.598 ; gain = 30.727
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1433.598 ; gain = 30.727
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+72 Infos, 6 Warnings, 104 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1433.598 ; gain = 39.766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1433.598 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1443.852 ; gain = 10.254
+INFO: [Common 17-1381] The checkpoint 'D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file accelerator_bd_wrapper_drc_routed.rpt -pb accelerator_bd_wrapper_drc_routed.pb -rpx accelerator_bd_wrapper_drc_routed.rpx
+Command: report_drc -file accelerator_bd_wrapper_drc_routed.rpt -pb accelerator_bd_wrapper_drc_routed.pb -rpx accelerator_bd_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file accelerator_bd_wrapper_methodology_drc_routed.rpt -pb accelerator_bd_wrapper_methodology_drc_routed.pb -rpx accelerator_bd_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file accelerator_bd_wrapper_methodology_drc_routed.rpt -pb accelerator_bd_wrapper_methodology_drc_routed.pb -rpx accelerator_bd_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/Engineering/Projekty/FPGA/Xilinx/Zynq7010_qmtech/Zynq7010_qmtech.runs/impl_1/accelerator_bd_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file accelerator_bd_wrapper_power_routed.rpt -pb accelerator_bd_wrapper_power_summary_routed.pb -rpx accelerator_bd_wrapper_power_routed.rpx
+Command: report_power -file accelerator_bd_wrapper_power_routed.rpt -pb accelerator_bd_wrapper_power_summary_routed.pb -rpx accelerator_bd_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+84 Infos, 6 Warnings, 104 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file accelerator_bd_wrapper_route_status.rpt -pb accelerator_bd_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file accelerator_bd_wrapper_timing_summary_routed.rpt -pb accelerator_bd_wrapper_timing_summary_routed.pb -rpx accelerator_bd_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file accelerator_bd_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file accelerator_bd_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file accelerator_bd_wrapper_bus_skew_routed.rpt -pb accelerator_bd_wrapper_bus_skew_routed.pb -rpx accelerator_bd_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 30 17:22:53 2022...

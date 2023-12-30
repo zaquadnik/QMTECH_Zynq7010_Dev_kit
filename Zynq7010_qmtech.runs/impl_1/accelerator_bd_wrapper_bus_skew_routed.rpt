@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Apr 30 17:22:53 2022
+| Host         : quad_core running 64-bit Service Pack 1  (build 7601)
+| Command      : report_bus_skew -warn_on_violation -file accelerator_bd_wrapper_bus_skew_routed.rpt -pb accelerator_bd_wrapper_bus_skew_routed.pb -rpx accelerator_bd_wrapper_bus_skew_routed.rpx
+| Design       : accelerator_bd_wrapper
+| Device       : 7z010-clg400
+| Speed File   : -2  PRODUCTION 1.11 2014-09-11
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
